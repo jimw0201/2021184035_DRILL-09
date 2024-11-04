@@ -30,8 +30,11 @@ def reset_world():
     boy = Boy()  # 영속 객체
     game_world.add_object(boy, 1)
 
-    grass = Grass() # 영속 객체, world가 존재하는 한 계속 살아있는 객체
-    game_world.add_object(grass, 0)
+    grass1 = Grass(400, 30)  # 영속 객체, world가 존재하는 한 계속 살아있는 객체
+    game_world.add_object(grass1, 0)
+
+    grass2 = Grass(400, 10)
+    game_world.add_object(grass2, 2)
 
 
 def update_world():
